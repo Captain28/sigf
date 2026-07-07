@@ -55,7 +55,7 @@ a:hover { text-decoration: underline; }
 .nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 28px;
   padding: 16px 24px;
 }
 
@@ -65,8 +65,34 @@ a:hover { text-decoration: underline; }
   font-weight: 700;
   color: var(--color-accent);
   letter-spacing: 0.06em;
+  margin-right: auto;
 }
 .logo:hover { text-decoration: none; }
+
+.lang-switch {
+  display: flex;
+  gap: 6px;
+}
+
+.lang-btn {
+  font-family: var(--font-body);
+  background: none;
+  border: 1px solid rgba(63, 107, 71, 0.3);
+  border-radius: 999px;
+  padding: 4px 11px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--color-text-soft);
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+.lang-btn:hover { border-color: var(--color-accent); color: var(--color-accent); }
+.lang-btn.active {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-surface);
+}
 
 .nav-links {
   list-style: none;

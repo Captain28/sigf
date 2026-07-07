@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SIGF – Sørumsand Internasjonale Gin-Festival</title>
-<meta name="description" content="Sørumsand Internasjonale Gin-Festival – en kveld med gin, botanikk og godt selskap ved Glomma.">
+<title data-i18n="meta.title">SIGF – Sørumsand Internasjonale Gin-Festival</title>
+<meta name="description" data-i18n-attr-content="meta.description" content="Sørumsand Internasjonale Gin-Festival – en kveld med gin, botanikk og godt selskap ved Glomma.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
@@ -14,17 +14,21 @@
 <header class="site-header">
   <nav class="nav container">
     <a href="#top" class="logo">SIGF</a>
-    <button class="nav-toggle" id="navToggle" aria-label="Åpne meny" aria-expanded="false">
+    <button class="nav-toggle" id="navToggle" data-i18n-attr-aria-label="nav.toggleLabel" aria-label="Åpne meny" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links" id="navLinks">
-      <li><a href="#om">Om festivalen</a></li>
-      <li><a href="#program">Program</a></li>
-      <li><a href="#utstillere">Utstillere</a></li>
-      <li><a href="#inngang">Gratis inngang</a></li>
-      <li><a href="#sted">Sted</a></li>
-      <li><a href="#kontakt">Kontakt</a></li>
+      <li><a href="#om" data-i18n="nav.om">Om festivalen</a></li>
+      <li><a href="#program" data-i18n="nav.program">Program</a></li>
+      <li><a href="#utstillere" data-i18n="nav.utstillere">Utstillere</a></li>
+      <li><a href="#inngang" data-i18n="nav.inngang">Gratis inngang</a></li>
+      <li><a href="#sted" data-i18n="nav.sted">Sted</a></li>
+      <li><a href="#kontakt" data-i18n="nav.kontakt">Kontakt</a></li>
     </ul>
+    <div class="lang-switch" id="langSwitch" role="group" aria-label="Velg språk / Choose language">
+      <button type="button" class="lang-btn active" data-lang="no">NO</button>
+      <button type="button" class="lang-btn" data-lang="en">EN</button>
+    </div>
   </nav>
 </header>
 
@@ -32,44 +36,44 @@
   <section class="hero" id="top">
     <div class="hero-botanicals" aria-hidden="true"></div>
     <div class="container hero-inner">
-      <p class="eyebrow">Lørdag 25. juli 2026 · fra kl. 14:00 · Jensrudveien 5</p>
+      <p class="eyebrow" data-i18n="hero.eyebrow">Lørdag 25. juli 2026 · fra kl. 14:00 · Jensrudveien 5</p>
       <h1>Sørumsand<br>Internasjonale<br>Gin&#8209;Festival</h1>
-      <p class="hero-lede">Én kveld med håndverksgin, botaniske smaker og godt selskap ved elva Glomma.</p>
+      <p class="hero-lede" data-i18n="hero.lede">Én kveld med håndverksgin, botaniske smaker og godt selskap ved elva Glomma.</p>
       <div class="hero-cta">
-        <a href="#inngang" class="btn btn-primary">Gratis inngang</a>
-        <a href="#program" class="btn btn-ghost">Se programmet</a>
+        <a href="#inngang" class="btn btn-primary" data-i18n="hero.ctaFree">Gratis inngang</a>
+        <a href="#program" class="btn btn-ghost" data-i18n="hero.ctaProgram">Se programmet</a>
       </div>
     </div>
   </section>
 
   <section class="photo-band">
-    <img src="images/gin-festival.jpg" alt="Gjester samlet i hagen på Jensrudveien 5 i solnedgang, med vimpelgirlandere, en gin-bar-skilt og bernersennenhunden Atlas" loading="lazy">
+    <img src="images/gin-festival.jpg" data-i18n-attr-alt="photo.alt" alt="Gjester samlet i hagen på Jensrudveien 5 i solnedgang, med vimpelgirlandere, en gin-bar-skilt og bernersennenhunden Atlas" loading="lazy">
   </section>
 
   <section class="section" id="om">
     <div class="container about-grid">
       <div class="about-text">
-        <span class="kicker">Om festivalen</span>
-        <h2>Der juniper møter Glomma</h2>
-        <p>Sørumsand Internasjonale Gin-Festival samler destillerier fra inn- og utland til én kveld fylt med
+        <span class="kicker" data-i18n="om.kicker">Om festivalen</span>
+        <h2 data-i18n="om.title">Der juniper møter Glomma</h2>
+        <p data-i18n="om.p1">Sørumsand Internasjonale Gin-Festival samler destillerier fra inn- og utland til én kveld fylt med
           smaksprøver, mesterklasser og godt drikkehåndverk. Fra lokale småskala-produsenter til
           internasjonale storheter innen gin – her finner du det brede spekteret av botanisk
           håndverksbrennevin, presentert i koselige hageomgivelser i Jensrudveien 5.</p>
-        <p>Festivalen passer for både den nysgjerrige nybegynneren og den erfarne connoisseuren, med eget
+        <p data-i18n="om.p2">Festivalen passer for både den nysgjerrige nybegynneren og den erfarne connoisseuren, med eget
           program for mat- og drikkematching, foredrag om destillering, og et eget marked med lokale
           spesialiteter.</p>
         <div class="about-stats">
           <div class="stat">
             <span class="stat-num">40+</span>
-            <span class="stat-label">Destillerier</span>
+            <span class="stat-label" data-i18n="om.stat1Label">Destillerier</span>
           </div>
           <div class="stat">
             <span class="stat-num">1</span>
-            <span class="stat-label">Kveld</span>
+            <span class="stat-label" data-i18n="om.stat2Label">Kveld</span>
           </div>
           <div class="stat">
             <span class="stat-num">120+</span>
-            <span class="stat-label">Ginsorter</span>
+            <span class="stat-label" data-i18n="om.stat3Label">Ginsorter</span>
           </div>
         </div>
       </div>
@@ -105,26 +109,26 @@
         </svg>
       </div>
       <div class="atlas-text">
-        <span class="kicker">Firbeint vertskap</span>
-        <h2>Møt Atlas</h2>
-        <p>Ingen SIGF uten husets egen bernersennenhund, Atlas. Han er den egentlige verten for
+        <span class="kicker" data-i18n="atlas.kicker">Firbeint vertskap</span>
+        <h2 data-i18n="atlas.title">Møt Atlas</h2>
+        <p data-i18n="atlas.p1">Ingen SIGF uten husets egen bernersennenhund, Atlas. Han er den egentlige verten for
           kvelden – patruljerer hagen med logrende hale, hilser personlig på alle nyankomne gjester,
           og holder et svært avslappet, men prinsipielt viktig, tilsyn med gin-baren.</p>
-        <p>Atlas er stor, svart-hvit-brun og umulig å overse. Han er glad i klapp, upåklagelig med
+        <p data-i18n="atlas.p2">Atlas er stor, svart-hvit-brun og umulig å overse. Han er glad i klapp, upåklagelig med
           smuler, og regnes av mange gjengangere som selve grunnen til at de kommer tilbake år etter
           år. Kom bort og hils – det er offisielt en del av programmet.</p>
         <div class="about-stats">
           <div class="stat">
             <span class="stat-num">1</span>
-            <span class="stat-label">Firbeint vert</span>
+            <span class="stat-label" data-i18n="atlas.stat1Label">Firbeint vert</span>
           </div>
           <div class="stat">
             <span class="stat-num">100%</span>
-            <span class="stat-label">Logrende hale</span>
+            <span class="stat-label" data-i18n="atlas.stat2Label">Logrende hale</span>
           </div>
           <div class="stat">
             <span class="stat-num">0 kr</span>
-            <span class="stat-label">Inngang for Atlas</span>
+            <span class="stat-label" data-i18n="atlas.stat3Label">Inngang for Atlas</span>
           </div>
         </div>
       </div>
@@ -133,106 +137,106 @@
 
   <section class="section section-alt" id="program">
     <div class="container">
-      <span class="kicker">Program</span>
-      <h2>Programmet for kvelden</h2>
+      <span class="kicker" data-i18n="program.kicker">Program</span>
+      <h2 data-i18n="program.title">Programmet for kvelden</h2>
       <div class="program-grid">
         <article class="program-day">
-          <span class="program-date">Lørdag 25. juli</span>
-          <h3>Gin-kveld i hagen på Jensrudveien 5</h3>
+          <span class="program-date" data-i18n="program.date">Lørdag 25. juli</span>
+          <h3 data-i18n="program.dayTitle">Gin-kveld i hagen på Jensrudveien 5</h3>
           <ul>
-            <li>14:00 – Dørene åpner</li>
-            <li>14:30 – Offisiell åpning</li>
-            <li>15:00 – Smaksboder / felles gin-bar</li>
-            <li>16:00 – Mesterklasse: Botanikk 101</li>
-            <li>17:00 – Mat & gin-matching</li>
-            <li>20:00 – Dørene stenger</li>
+            <li data-i18n="program.item1">14:00 – Dørene åpner</li>
+            <li data-i18n="program.item2">14:30 – Offisiell åpning</li>
+            <li data-i18n="program.item3">15:00 – Smaksboder / felles gin-bar</li>
+            <li data-i18n="program.item4">16:00 – Mesterklasse: Botanikk 101</li>
+            <li data-i18n="program.item5">17:00 – Mat & gin-matching</li>
+            <li data-i18n="program.item6">20:00 – Dørene stenger</li>
           </ul>
         </article>
       </div>
-      <p class="program-note">* Fullstendig program med foredragsholdere og utstillere publiseres nærmere
+      <p class="program-note" data-i18n="program.note">* Fullstendig program med foredragsholdere og utstillere publiseres nærmere
         festivalstart.</p>
     </div>
   </section>
 
   <section class="section" id="utstillere">
     <div class="container">
-      <span class="kicker">Utstillere</span>
-      <h2>Fra lokale bakgårder til internasjonale destillerier</h2>
-      <p class="section-lede">Hvert år samler vi et bredt spekter av gin-produsenter – her er noen av
+      <span class="kicker" data-i18n="utstillere.kicker">Utstillere</span>
+      <h2 data-i18n="utstillere.title">Fra lokale bakgårder til internasjonale destillerier</h2>
+      <p class="section-lede" data-i18n="utstillere.lede">Hvert år samler vi et bredt spekter av gin-produsenter – her er noen av
         kategoriene du kan glede deg til.</p>
       <div class="exhibitor-grid">
         <div class="exhibitor-card">
-          <h3>Norsk håndverksgin</h3>
-          <p>Småskala-destillerier fra hele Norge, med lokale botaniske råvarer.</p>
+          <h3 data-i18n="utstillere.card1Title">Norsk håndverksgin</h3>
+          <p data-i18n="utstillere.card1Desc">Småskala-destillerier fra hele Norge, med lokale botaniske råvarer.</p>
         </div>
         <div class="exhibitor-card">
-          <h3>Internasjonale gjester</h3>
-          <p>Utvalgte destillerier fra Storbritannia, Spania og andre gin-nasjoner.</p>
+          <h3 data-i18n="utstillere.card2Title">Internasjonale gjester</h3>
+          <p data-i18n="utstillere.card2Desc">Utvalgte destillerier fra Storbritannia, Spania og andre gin-nasjoner.</p>
         </div>
         <div class="exhibitor-card">
-          <h3>Nye smaksretninger</h3>
-          <p>Eksperimentelle og nyskapende botaniske profiler for de nysgjerrige.</p>
+          <h3 data-i18n="utstillere.card3Title">Nye smaksretninger</h3>
+          <p data-i18n="utstillere.card3Desc">Eksperimentelle og nyskapende botaniske profiler for de nysgjerrige.</p>
         </div>
         <div class="exhibitor-card">
-          <h3>Mat & tilbehør</h3>
-          <p>Tonic-produsenter, garnityr og matboder som utfyller smaksopplevelsen.</p>
+          <h3 data-i18n="utstillere.card4Title">Mat & tilbehør</h3>
+          <p data-i18n="utstillere.card4Desc">Tonic-produsenter, garnityr og matboder som utfyller smaksopplevelsen.</p>
         </div>
       </div>
-      <p class="program-note">Er du produsent og ønsker å stille ut? <a href="#kontakt">Ta kontakt med
+      <p class="program-note" data-i18n-html="utstillere.noteHtml">Er du produsent og ønsker å stille ut? <a href="#kontakt">Ta kontakt med
         oss.</a></p>
     </div>
   </section>
 
   <section class="section" id="spesialgjest">
     <div class="container">
-      <span class="kicker">Spesialgjest</span>
-      <h2>James May kommer til SIGF!</h2>
-      <p class="section-lede">I år er vi stolte over å kunngjøre at TV-profilen og bilentusiasten James
+      <span class="kicker" data-i18n="spesialgjest.kicker">Spesialgjest</span>
+      <h2 data-i18n="spesialgjest.title">James May kommer til SIGF!</h2>
+      <p class="section-lede" data-i18n="spesialgjest.p">I år er vi stolte over å kunngjøre at TV-profilen og bilentusiasten James
         May, kjent fra Top Gear og The Grand Tour, kommer innom hagefesten for en uformell prat om
         gin, håndverk og livets små gleder. Ta gjerne med et spørsmål – eller en ekstra flaske gin til
         ham.</p>
-      <p class="program-note">* Med forbehold om endringer i programmet.</p>
+      <p class="program-note" data-i18n="spesialgjest.note">* Med forbehold om endringer i programmet.</p>
     </div>
   </section>
 
   <section class="section section-alt" id="inngang">
     <div class="container">
-      <span class="kicker">Inngang</span>
-      <h2>Gratis inngang – ta med en flaske gin</h2>
-      <p class="section-lede">SIGF er en dugnadsbasert festival og koster ingenting å komme på. Eneste
+      <span class="kicker" data-i18n="inngang.kicker">Inngang</span>
+      <h2 data-i18n="inngang.title">Gratis inngang – ta med en flaske gin</h2>
+      <p class="section-lede" data-i18n="inngang.lede">SIGF er en dugnadsbasert festival og koster ingenting å komme på. Eneste
         krav: alle gjester må ha med minst én flaske gin. Del av gleden er nettopp å oppdage nye
         sorter gjennom hverandres bidrag!</p>
       <div class="ticket-grid">
         <article class="ticket-card featured">
-          <span class="ticket-badge">Slik funker det</span>
-          <h3>Gratis adgang</h3>
+          <span class="ticket-badge" data-i18n="inngang.badge">Slik funker det</span>
+          <h3 data-i18n="inngang.cardTitle">Gratis adgang</h3>
           <p class="ticket-price">0 kr</p>
           <ul>
-            <li>Inngang hele kvelden, lørdag 25. juli</li>
-            <li>Ta med minst én flaske gin per person</li>
-            <li>Alle flasker samles i en felles bar for utveksling og smaking</li>
-            <li>Egen tonic og garnityr er tilgjengelig på stedet</li>
+            <li data-i18n="inngang.item1">Inngang hele kvelden, lørdag 25. juli</li>
+            <li data-i18n="inngang.item2">Ta med minst én flaske gin per person</li>
+            <li data-i18n="inngang.item3">Alle flasker samles i en felles bar for utveksling og smaking</li>
+            <li data-i18n="inngang.item4">Egen tonic og garnityr er tilgjengelig på stedet</li>
           </ul>
-          <a href="#kontakt" class="btn btn-primary">Meld deg på</a>
+          <a href="#kontakt" class="btn btn-primary" data-i18n="inngang.cta">Meld deg på</a>
         </article>
       </div>
-      <p class="program-note">* Husk gyldig legitimasjon – festivalen er for besøkende over 18 år.</p>
+      <p class="program-note" data-i18n="inngang.note">* Husk gyldig legitimasjon – festivalen er for besøkende over 18 år.</p>
     </div>
   </section>
 
   <section class="section" id="sted">
     <div class="container location-grid">
       <div>
-        <span class="kicker">Sted</span>
+        <span class="kicker" data-i18n="sted.kicker">Sted</span>
         <h2>Jensrudveien 5</h2>
-        <p>Festivalen holdes utendørs i hagen på Jensrudveien 5 – med vimpelgirlandere, gin-bar og
+        <p data-i18n="sted.p1">Festivalen holdes utendørs i hagen på Jensrudveien 5 – med vimpelgirlandere, gin-bar og
           god plass til å slå seg ned. Kledd for norsk julikveld anbefales.</p>
         <address>
           Jensrudveien 5<br>
           1920 Sørumsand<br>
-          Norge
+          <span data-i18n="sted.country">Norge</span>
         </address>
-        <p>Reiseinformasjon og parkering publiseres nærmere festivalen.</p>
+        <p data-i18n="sted.p2">Reiseinformasjon og parkering publiseres nærmere festivalen.</p>
       </div>
       <div class="map-placeholder" aria-hidden="true">
         <svg viewBox="0 0 400 300" class="map-svg">
@@ -249,28 +253,28 @@
   <section class="section section-alt" id="kontakt">
     <div class="container contact-grid">
       <div>
-        <span class="kicker">Kontakt</span>
-        <h2>Meld interesse eller ta kontakt</h2>
-        <p>Har du spørsmål om festivalen, ønsker å stille ut, eller vil du melde deg på?
+        <span class="kicker" data-i18n="kontakt.kicker">Kontakt</span>
+        <h2 data-i18n="kontakt.title">Meld interesse eller ta kontakt</h2>
+        <p data-i18n="kontakt.p">Har du spørsmål om festivalen, ønsker å stille ut, eller vil du melde deg på?
           Send oss en melding.</p>
         <ul class="contact-info">
-          <li>E-post: <a href="mailto:post@sigf.no">post@sigf.no</a></li>
+          <li><span data-i18n="kontakt.emailLabel">E-post:</span> <a href="mailto:post@sigf.no">post@sigf.no</a></li>
           <li>Instagram: <a href="#">@sigf_festival</a></li>
           <li>Facebook: <a href="#">Sørumsand Internasjonale Gin-Festival</a></li>
         </ul>
       </div>
       <form class="contact-form" id="contactForm">
-        <label for="name">Navn</label>
+        <label for="name" data-i18n="kontakt.formName">Navn</label>
         <input type="text" id="name" name="name" required>
 
-        <label for="email">E-post</label>
+        <label for="email" data-i18n="kontakt.formEmail">E-post</label>
         <input type="email" id="email" name="email" required>
 
-        <label for="message">Melding</label>
+        <label for="message" data-i18n="kontakt.formMessage">Melding</label>
         <textarea id="message" name="message" rows="4" required></textarea>
 
-        <button type="submit" class="btn btn-primary">Send melding</button>
-        <p class="form-note" id="formNote" hidden>Takk! Dette er en demo-side, så meldingen ble ikke
+        <button type="submit" class="btn btn-primary" data-i18n="kontakt.formSubmit">Send melding</button>
+        <p class="form-note" id="formNote" data-i18n="kontakt.formNote" hidden>Takk! Dette er en demo-side, så meldingen ble ikke
           sendt noe sted ennå – koble til et skjema-verktøy for å motta henvendelser.</p>
       </form>
     </div>
@@ -280,10 +284,11 @@
 <footer class="site-footer">
   <div class="container footer-inner">
     <span class="logo">SIGF</span>
-    <p>&copy; 2026 Sørumsand Internasjonale Gin-Festival. Alle rettigheter forbeholdt.</p>
+    <p data-i18n="footer.copyright">&copy; 2026 Sørumsand Internasjonale Gin-Festival. Alle rettigheter forbeholdt.</p>
   </div>
 </footer>
 
+<script src="js/i18n.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
