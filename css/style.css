@@ -248,6 +248,19 @@ a:hover { text-decoration: underline; }
 .about-art { display: flex; justify-content: center; }
 .botanical-illustration { width: 100%; max-width: 260px; }
 
+/* Atlas */
+.atlas-grid {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.atlas-art { display: flex; justify-content: center; }
+.paw-illustration { width: 100%; max-width: 220px; }
+
+.atlas-text p { color: var(--color-text-soft); }
+
 /* Program */
 .program-grid {
   display: grid;
@@ -442,8 +455,8 @@ a:hover { text-decoration: underline; }
 
 /* Responsive */
 @media (max-width: 860px) {
-  .about-grid, .location-grid, .contact-grid { grid-template-columns: 1fr; }
-  .about-art { order: -1; }
+  .about-grid, .location-grid, .contact-grid, .atlas-grid { grid-template-columns: 1fr; }
+  .about-art, .atlas-art { order: -1; }
 }
 
 @media (max-width: 720px) {
