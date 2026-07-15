@@ -12,12 +12,3 @@ navLinks.querySelectorAll('a').forEach((link) => {
     navToggle.setAttribute('aria-expanded', 'false');
   });
 });
-
-const contactForm = document.getElementById('contactForm');
-const formNote = document.getElementById('formNote');
-
-contactForm.addEventListener('submit', (event) => {
-  event.preventDefault();
-  formNote.hidden = false;
-  contactForm.reset();
-});

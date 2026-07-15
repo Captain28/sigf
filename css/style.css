@@ -410,57 +410,6 @@ a:hover { text-decoration: underline; }
 .map-placeholder { border-radius: 20px; overflow: hidden; }
 .map-svg { width: 100%; height: auto; display: block; }
 
-/* Contact */
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-}
-
-.contact-info { list-style: none; padding: 0; margin: 24px 0 0; color: var(--color-text-soft); }
-.contact-info li { padding: 6px 0; }
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  background: var(--color-surface);
-  padding: 32px;
-  border-radius: 16px;
-  border: 1px solid rgba(63,107,71,0.15);
-}
-
-.contact-form label {
-  font-size: 0.85rem;
-  font-weight: 600;
-  margin: 14px 0 6px;
-  color: var(--color-bg);
-}
-.contact-form label:first-child { margin-top: 0; }
-
-.contact-form input,
-.contact-form textarea {
-  font-family: var(--font-body);
-  padding: 12px 14px;
-  border-radius: 10px;
-  border: 1px solid rgba(63,107,71,0.25);
-  background: var(--color-surface-alt);
-  font-size: 0.95rem;
-  resize: vertical;
-}
-.contact-form input:focus,
-.contact-form textarea:focus {
-  outline: 2px solid var(--color-accent);
-  outline-offset: 1px;
-}
-
-.contact-form .btn { margin-top: 22px; align-self: flex-start; }
-
-.form-note {
-  margin-top: 14px;
-  font-size: 0.85rem;
-  color: var(--color-text-soft);
-}
-
 /* Footer */
 .site-footer {
   background: var(--color-bg);
@@ -481,7 +430,7 @@ a:hover { text-decoration: underline; }
 
 /* Responsive */
 @media (max-width: 860px) {
-  .about-grid, .location-grid, .contact-grid, .atlas-grid { grid-template-columns: 1fr; }
+  .about-grid, .location-grid, .atlas-grid { grid-template-columns: 1fr; }
   .about-art, .atlas-art { order: -1; }
 }
 
